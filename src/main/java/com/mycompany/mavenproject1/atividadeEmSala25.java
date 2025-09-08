@@ -20,11 +20,12 @@ public class atividadeEmSala25 {
         }
         String elementoProcurado = JOptionPane.showInputDialog("Digite o nome a ser procurado");
         flag = 0;
+        
         for(i=0; i<numElementos;i++){
             if (vetorPesquisado[i].equalsIgnoreCase(elementoProcurado)){
                 JOptionPane.showMessageDialog(null,"o valor procurado foi encontrado na posição "+i);
             flag = 1;
-       //     break;
+            break;
             }
         }
         if (flag == 0){
