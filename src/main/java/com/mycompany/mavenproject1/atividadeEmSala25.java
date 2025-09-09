@@ -16,9 +16,14 @@ public class atividadeEmSala25 {
         boolean flag = true;
         int numElementos = Integer.parseInt(JOptionPane.showInputDialog("Digite o número de pessoas a ser cadastrado "));
         String vetorPesquisado[] = new String[numElementos];
-        for(i=0; i<numElementos;i++){
+        for(i=0; i>numElementos;i++){
             vetorPesquisado[i] = JOptionPane.showInputDialog("Digite o nome para cadastro");
         }
+//        for(i=numElementos-1; i>-1;i--){
+//            vetorPesquisado[i] = JOptionPane.showInputDialog("Digite o nome para cadastro");
+//        }
+
+        
         String elementoProcurado = JOptionPane.showInputDialog("Digite o nome a ser procurado");
         
         for(i=0; i<numElementos;i++){
