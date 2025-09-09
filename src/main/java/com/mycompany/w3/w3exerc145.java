@@ -4,6 +4,8 @@
  */
 package com.mycompany.w3;
 import javax.swing.JOptionPane;
+import java.util.Arrays;
+import java.util.ArrayList;
 /**
  Write a Java program to remove the nth element from the end of a given list.
 Sample Output:
@@ -23,18 +25,23 @@ public class w3exerc145 {
         popElement = array.length - popElement; //iterate trough the array from the end
         System.out.println(popElement);
         int i;
+//           Using a list to remove
+//           ArrayList<Integer> newList = new ArrayList<>();
+//           for (int num: array){
+//                newList.add(num);
+//            }
+//           newList.remove(popElement);
+//           int newArray[] = newList.stream().mapToInt(i -> i).toArray();
+           System.out.println(Arrays.toString(newArray));
         
-        String newArray2="";
-        String array2 ="";
+        
         for (i=array.length-1; i>=0; i--){
             if (i != popElement){    //remove the given position from the array
                 newArray[i] = array[i];
             }
-        newArray2 = Integer.toString(newArray[i]) + " ";
-        System.out.print(newArray2);
-        array2 = Integer.toString(i) + " ";
-        
         }
+        System.out.println(Arrays.toString(newArray));
+        
 
     }
 }
